@@ -1,1 +1,1 @@
-# Proyecto_Compu
+# Proyecto_Compu_README.md
