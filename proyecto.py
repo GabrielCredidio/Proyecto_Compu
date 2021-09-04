@@ -11,29 +11,54 @@ EF(print var) promedio del examen
 
 
 """
-def evalua_multiplicacion (num1, vnum2):
+def evalua_multiplicacion (num1, num2):
+    multiplicacion = num1 * num2
+    return multiplicacion
     """
-    recibir --> num1 valor numérico, num2 valor numérico
-    multiplicar --> num1 * num2
-    devolver --> resultado de multiplicacion
-    """
-return num1 * num2
+""" Variables para entrada de datos """
 
-def evalua_suma (num1, vnum2):
-    """
-    recibir --> num1 valor numérico, num2 valor numérico
-    suma --> num1 + num2
-    devolver --> resultado de suma
-    """
-return num1 + num2
+   num1 = input("Informar el primer numero: ")
+   num2 = input("Informar el segundo numero: ")
+  
+""" Funcion de multiplicacion """
 
-def evalua_division (num1, vnum2):
+  resultado = int(num1) * int(num2)
+ 
+""" Funcion de presentacion de resultado """
+
+  print(resultado)
+
+def evalua_suma (num1, num2):
     """
-    recibir --> num1 valor numérico, num2 valor numérico
-    dividir --> num1 / num2
-    devolver --> resultado de division
+ """ Variables para entrada de datos """
+ 
+   num1 = input("Informar el primer numero: ")
+   num2 = input("Informar el segundo numero: ")
+  
+  """ Funcion de suma """
+
+  resultado = int(num1) + int(num2)
+  
+  """ Funcion de presentacion de resultado """
+
+  print(resultado)
     """
-return num1 / num2
+
+def evalua_division (num1, num2):
+    """
+  """ Variables para entrada de datos """
+
+   num1 = input("Informar el primer numero: ")
+   num2 = input("Informar el segundo numero: ")
+  
+  """ Funcion de division """
+
+  resultado = int(num1) / int(num2)
+  
+  """ Funcion de presentacion de resultado """
+
+  print(resultado)
+    """
 
 if repuesta (a) == True
  respuesta = respuesta + 1
@@ -51,6 +76,24 @@ if repuesta (d) == False
  respuesta = respuesta + 0
 print("respuesta 4 valor %i, es %r debe ser %r" % (d ,respuesta(d), False))
 """
+
+"""
+def evalua(respuesta_correcta, respuesta_usuario, evaluacion, muestra = 1):
+ 
+ if respuesta == respuesta_usuario:
+  evaluacion = evaluacion +1
+  
+  if muestra == 1:
+   respuesta(respuesta_correcta, respuesta_usuario, evaluacion)
+   return evaluacion 
+  
+def respuesta(respuesta_correcta, respuesta_usuario,evaluacion):
+ 
+ print("Respuesta correcta.", respuesta)
+ print("Respuesta:", respuesta_usuario)
+ print("Evaluacion_en_linea:", evaluacion)
+ 
+""" 
 
 
 
