@@ -80,18 +80,18 @@ print("respuesta 4 valor %i, es %r debe ser %r" % (d ,respuesta(d), False))
 """
 def evalua(respuesta_correcta, respuesta_usuario, evaluacion, muestra = 1):
  
- if respuesta == respuesta_usuario:
-  evaluacion = evaluacion +1
+    if respuesta == respuesta_usuario:
+        evaluacion = evaluacion +1
   
-  if muestra == 1:
-   respuesta(respuesta_correcta, respuesta_usuario, evaluacion)
-   return evaluacion 
+    if muestra == 1:
+        respuesta(respuesta_correcta, respuesta_usuario, evaluacion)
+        return evaluacion 
   
 def respuesta(respuesta_correcta, respuesta_usuario,evaluacion):
  
- print("Respuesta correcta.", respuesta)
- print("Respuesta:", respuesta_usuario)
- print("Evaluacion_en_linea:", evaluacion)
+    print("Respuesta correcta.", respuesta)
+    print("Respuesta:", respuesta_usuario)
+    print("Evaluacion_en_linea:", evaluacion)
  
 """ 
 
