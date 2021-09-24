@@ -1,4 +1,3 @@
-"""
 EO(preguntas de 1-180, num1, num2)
  var = num1 + num2 + num3
  imprimir pregunta num1
@@ -7,93 +6,93 @@ EO(preguntas de 1-180, num1, num2)
  print(correcto respuesta d)
  print(incorrecto a,b,c)
 EF(print var) promedio del examen
-"""
 
+#===========================
+# em = evalua multiplicación
+def em():
 
-"""
-def evalua_multiplicacion (num1, num2):
-    multiplicacion = num1 * num2
-    return multiplicacion
-    """
-""" Variables para entrada de datos """
+    num1 = input("Informar el primer numero: ")
+    num2 = input("Informar el segundo numero:")
+    resultado = int(num1) * int(num2)
 
-   num1 = input("Informar el primer numero: ")
-   num2 = input("Informar el segundo numero: ")
-  
-""" Funcion de multiplicacion """
+    return resultado
 
-  resultado = int(num1) * int(num2)
+multiplicacion = em()
+print(multiplicacion)
+#==========================
+# es = evaluación suma
+def es ():
  
-""" Funcion de presentacion de resultado """
+    num1 = input("Informar el primer numero: ")
+    num2 = input("Informar el segundo numero: ")
+    resultado = int(num1) + int(num2)
+    return resultado
 
-  print(resultado)
+suma = es()
+print(suma)
+#==========================
+# ed = evaluación división
+def ed ():
+    
+    num1 = input("Informar el primer numero: ")
+    num2 = input("Informar el segundo numero: ")
+    resultado = int(num1) / int(num2)
+    return resultado
 
-def evalua_suma (num1, num2):
-    """
- """ Variables para entrada de datos """
- 
-   num1 = input("Informar el primer numero: ")
-   num2 = input("Informar el segundo numero: ")
-  
-  """ Funcion de suma """
+division = ed()
+print(suma)
+#==========================
 
-  resultado = int(num1) + int(num2)
-  
-  """ Funcion de presentacion de resultado """
+respuesta = input("Seleccione las letras entre a, b, c ó d: ")
+R=0
 
-  print(resultado)
-    """
+R = int(input("Ingresa una calificación: "))
 
-def evalua_division (num1, num2):
-    """
-  """ Variables para entrada de datos """
+while R < 70:
+    R = int(input("Ingresa una calificación: "))
 
-   num1 = input("Informar el primer numero: ")
-   num2 = input("Informar el segundo numero: ")
-  
-  """ Funcion de division """
+if respuesta == "a":
+    R = R + 1
+    print("respuesta 1 valor %i, es %r debe ser %r" % (a ,respuesta(a), True))
 
-  resultado = int(num1) / int(num2)
-  
-  """ Funcion de presentacion de resultado """
+if respuesta == "b":
+    respuesta = respuesta + 0
+    print("respuesta 2 valor %i, es %r debe ser %r" % (c ,respuesta(c), False))
 
-  print(resultado)
-    """
+if respuesta == "c":
+    respuesta = respuesta + 1
+    print("respuesta 3 valor %i, es %r debe ser %r" % (b ,respuesta(b), True))
 
-if repuesta (a) == True
- respuesta = respuesta + 1
-print("respuesta 1 valor %i, es %r debe ser %r" % (a ,respuesta(a), True))
+if respuesta == "d":
+    respuesta = respuesta + 0
+    print("respuesta 4 valor %i, es %r debe ser %r" % (d ,respuesta(d), False))
 
-if repuesta (c) == False
- respuesta = respuesta + 0
-print("respuesta 2 valor %i, es %r debe ser %r" % (c ,respuesta(c), False))
-
-if repuesta (b) == True
- respuesta = respuesta + 1
-print("respuesta 3 valor %i, es %r debe ser %r" % (b ,respuesta(b), True))
-
-if repuesta (d) == False
- respuesta = respuesta + 0
-print("respuesta 4 valor %i, es %r debe ser %r" % (d ,respuesta(d), False))
-"""
-
-"""
 def evalua(respuesta_correcta, respuesta_usuario, evaluacion, muestra = 1):
- 
     if respuesta == respuesta_usuario:
         evaluacion = evaluacion +1
-  
     if muestra == 1:
         respuesta(respuesta_correcta, respuesta_usuario, evaluacion)
-        return evaluacion 
+    return evaluacion 
   
 def respuesta(respuesta_correcta, respuesta_usuario,evaluacion):
  
     print("Respuesta correcta.", respuesta)
     print("Respuesta:", respuesta_usuario)
     print("Evaluacion_en_linea:", evaluacion)
- 
-""" 
+    
+R = int(input("Ingresa una calificación de Matematicas: "))
 
+while R < 70:
+    R = int(input("Ingresa una calificación: "))
+    
+    
+R = int(input("Ingresa una calificación de Espanol: "))
 
+while R < 70:
+    R = int(input("Ingresa una calificación: "))
+    
+R = int(input("Ingresa una calificación Computacion: "))
+
+while R < 70:
+    R = int(input("Ingresa una calificación: "))
 
